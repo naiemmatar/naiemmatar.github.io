@@ -1,0 +1,307 @@
+/* CSS Variables */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 30px;
+}
+
+a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "Home"
+    "About"
+    "Work"
+    "Testimonial"
+    "Contact";
+}
+
+.Home{
+    grid-area: Home;
+    background-image: url(file:///Users/naiemmatar/Desktop/WebsiteTest2/Assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 0px 80px;
+
+}
+
+.HomeContent{
+    text-align: center;
+    display:grid;
+    grid-row-gap: 20px;
+    justify-items: center;
+    height: calc(100vh - 300px);
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 20px 20px;
+    margin-top: 300px;
+
+}
+
+.HomeContent p{
+    color:#fff
+}
+
+
+.About{
+    grid-area: About;
+    background-color: #46494C;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    padding: 100px 80px;
+    grid-row-gap: 50px;
+    justify-items: center;
+
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 50px;
+    max-width: 1000px;
+}
+
+.skill{
+border: 3px solid #00CCFF;
+border-radius: 20px;
+height: auto;
+padding: 20px;
+display: grid;
+grid-row-gap: 20px;
+}
+
+
+.Headline{
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+text-underline-offset: 15px;
+text-decoration-color: #00CCFF;
+text-decoration-thickness: 2px;
+justify-content: center;
+display: grid;
+
+}
+.Work{
+    grid-area: Work;
+    background-color: #4C5C68;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    padding: 100px 80px;
+    grid-row-gap: 50px;
+}
+.jobs{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    overflow: auto;
+    justify-items: center;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: #46494C;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+        background: #B2C2C7;
+    border-radius: 20px;
+
+  }
+
+.job{
+    border: 3px solid #00CCFF;
+    border-radius: 20px;
+    display:grid;
+    height:350px;
+    width:250px;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: rgb(0,204,255);
+background: radial-gradient(circle, rgba(0,204,255,0.30575980392156865) 0%, rgba(0,204,255,0.9360119047619048) 100%);
+}
+
+.Testimonial{
+    grid-area: Testimonial;
+    background-color: #46494C;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    padding: 100px 80px;
+    grid-row-gap: 50px;
+    justify-items: center;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    justify-items: center;
+    max-width: 1000px;
+}
+
+.review{
+    border: 2px solid #00CCFF;
+    border-radius: 20px;
+    padding:20px;
+    text-align: left;
+
+}
+
+.Contact{
+    grid-area: Contact;
+    background-color: #4C5C68;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    padding: 100px 80px;
+    grid-row-gap: 50px;
+    justify-items: center;
+
+}
+
+button{
+    width:150px;
+    height:50px;
+    background-color: #46494C;
+    color:#fff;
+    border: 1px solid #00CCFF;
+    border-radius: 10px;
+}
+
+nav{
+    display:grid;
+    grid-template-columns: 1fr auto auto auto auto auto; 
+    grid-template-rows: 1fr;  
+    padding: 30px 0px;
+    align-items: center;
+}
+
+nav a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+nav{
+    display:grid;
+    padding: 30px 0px;
+    align-items: center;
+    text-align: center;
+    grid-row-gap: 20px;
+    justify-items: center;
+
+
+    grid-template-columns: lfr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "logo logo logo logo logo"
+    "a b c d e";
+
+}
+
+
+.skills{
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 50px;
+    grid-template-areas:
+    "skill skill"
+    "skill skill"
+    "skill skill";
+}
+
+
+.HomeContent{
+    text-align: center;
+    display:grid;
+    grid-row-gap: 20px;
+    justify-items: center;
+    height: 300px;
+    margin-top: 100px;
+
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 50px;
+    justify-items: center;
+    max-width: 1000px;
+}
+
+.logo{
+    grid-area: logo;
+}
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}
+
+}
