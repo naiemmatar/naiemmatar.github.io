@@ -126,6 +126,7 @@ display: grid;
     text-align: center;
     padding: 100px 80px;
     grid-row-gap: 50px;
+    justify-items: center
 }
 .jobs{
     display: grid;
@@ -134,6 +135,7 @@ display: grid;
     grid-column-gap: 50px;
     overflow: auto;
     justify-items: center;
+    max-width: 1000px;
 }
 
 ::-webkit-scrollbar {
