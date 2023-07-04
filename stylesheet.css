@@ -46,7 +46,7 @@ a{
 
 .Home{
     grid-area: Home;
-    background-image: url(file:///Users/naiemmatar/Desktop/WebsiteTest2/Assets/bg.png);
+    background-image: url('https://i.ibb.co/djnBdTZ/bg.jpg');
     background-position: center;
     background-size: cover;
     display:grid;
